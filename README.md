@@ -1,2 +1,5 @@
-# Project-Euler
-Problems from https://projecteuler.net/
+# Project-Euler , Hackerrank, LeetCode
+
+https://projecteuler.net/
+https://www.hackerrank.com/
+https://leetcode.com/
