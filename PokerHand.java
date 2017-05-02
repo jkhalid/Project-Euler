@@ -163,7 +163,7 @@ public class PokerHand {
 						return "Player 2"; }
 					else if (check1 == 0 && check2 == 0)
 					{
-						// check highest card in case both four of a kind the middle card will be decider
+				// check highest card in case both four of a kind the middle card will be decider
 						if(card_value.get(play1[2].charAt(0)) > card_value.get(play2[2].charAt(0)))
 						{ 
 							return "Player 1"; }
@@ -201,17 +201,17 @@ public class PokerHand {
 								return "Player 2"; 
 							else if (check1 == 0 && check2 == 0)
 							{
-								// check highest card in case both have Straight then highest card will be decider
+				// check highest card in case both have Straight then highest card will be decider
 								if(play1[4].charAt(0) == 'A' && play2[4].charAt(0) == 'A' )
 								{
-									if(card_value.get(play1[3].charAt(0)) > card_value.get(play2[3].charAt(0)))
+						if(card_value.get(play1[3].charAt(0)) > card_value.get(play2[3].charAt(0)))
 									return "Player 1"; 
 									else
 									return "Player 2"; 
 								}
 								else
 								{
-									if(card_value.get(play1[4].charAt(0)) > card_value.get(play2[4].charAt(0)))
+						if(card_value.get(play1[4].charAt(0)) > card_value.get(play2[4].charAt(0)))
 										return "Player 1"; 
 									else
 										return "Player 2"; 
@@ -228,8 +228,8 @@ public class PokerHand {
 									return "Player 2"; 
 								else if (check1 == 0 && check2 == 0)
 								{
-									// check highest card in case both have Three of a Kind then highest card will be decider
-									if(card_value.get(play1[2].charAt(0)) > card_value.get(play2[2].charAt(0)))
+		        // check highest card in case both have Three of a Kind then highest card will be decider
+						if(card_value.get(play1[2].charAt(0)) > card_value.get(play2[2].charAt(0)))
 									return "Player 1"; 
 									else
 									return "Player 2"; 
@@ -241,7 +241,7 @@ public class PokerHand {
 
 									int sum1 = check1_arr[0][1] + check1_arr[1][1];
 									int sum2 = check2_arr[0][1] + check2_arr[1][1];
-									if(sum1 > sum2)  // p1 has 2 pair and p2 has 1 pair or p1 has a pair and p2 doesnt
+				if(sum1 > sum2)  // p1 has 2 pair and p2 has 1 pair or p1 has a pair and p2 doesnt
 										return "Player 1";
 									else if (sum2 > sum1)
 										return "Player 2";
